@@ -1,0 +1,11 @@
+@import url(estilos.css);
+
+.ubicacion{
+    height: 100vh;
+}
+
+#titulo h2{
+    font-family: cursive;
+    margin-bottom: 30px;
+    text-align: center;
+}

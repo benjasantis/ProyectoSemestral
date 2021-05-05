@@ -2,6 +2,7 @@
 @import url(menu.css);
 @import url(contenido.css);
 @import url(lateral.css);
+@import url(formulario.css);
 
 *{
     margin: 0;
@@ -34,6 +35,14 @@ h1{
 }
 header .contenedor{
     display: table;
+    border-bottom: solid 2px rgb(255, 255, 255, 0.3);
+}
+
+header .contenedor .search{
+    font-family: cursive;
+    margin: 5px;
+    border-radius: 10px;
+    
 }
 section{
     width: 100%;
@@ -68,6 +77,7 @@ footer{
     height: 80px;
     background: black;
     display: grid;
+    bottom: 0;
 
 
     
