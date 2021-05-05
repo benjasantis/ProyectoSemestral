@@ -42,6 +42,7 @@ header .contenedor .search{
     font-family: cursive;
     margin: 5px;
     border-radius: 10px;
+    height: 35px;
     
 }
 section{
@@ -67,7 +68,7 @@ section{
 
 main{
     width: 100%;
-    height: auto;
+    height: 100vh;
     padding: 10px;
     margin-top: 50px;
 }

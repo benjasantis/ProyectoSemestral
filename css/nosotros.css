@@ -1,0 +1,31 @@
+
+
+#contenido{
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    
+
+}
+
+.historia{
+    width: 40%;
+    float: left;
+    padding: 50px;
+
+}
+.historia h2{
+    font-family: cursive;
+    padding: 15px;
+}
+
+.mision{
+    width: 95%;
+    padding: 50px;
+    
+}
+
+.mision h2{
+    font-family: cursive;
+    padding: 15px;
+}
