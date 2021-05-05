@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caos News</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <script src="https://kit.fontawesome.com/3de857c674.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/usuario.css">
+</head>
+
+<body>
+    <header>
+        <div class ="contenedor">
+            <h1 class ="icon-globe">Caos News</h1>
+            <input type="checkbox" name="" id="menu-bar">
+            <label class="fas fa-bars" for="menu-bar"></label>
+
+            <nav class = "menu">
+                    <a href="index.html">Inicio</a>
+                    <a href="ubicacion.html">Ubicación</a>
+                    <a href="contactanos.html">Contacto</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="">Ingresar</a>
+                    <input class="search" type="text" name="buscar" id="" placeholder="Buscar">
+            </nav>
+        </div>
+    </header>
+    <section id = "cabecera">
+        <h2>Lo mas Actual</h2>
+        <h3>Informate junto a nosotros</h3>
+    </section>
+
+    <section id = "formulario">
+
+        <form class = "contacto" action="" method="post">
+        <h2>Registro Usuario</h2>
+         <div class = "contenedor-input">
+            
+            <input class = "col-sm" type="email" name="txtAutor" id="" placeholder="Ingrese El txtAutor">
+            <input class = "col-sm" type="date" name="dateFecha" id="">
+            <input class = "col-sm" type="text" name="txtTitulo" id="" placeholder="Ingrese Titulo">
+            <input class = "col-sm" type="text" name="txtCategoria" id="" placeholder="Ingrese Categoria">
+            <input class = "col-sm" type="text" name="txtUbicacion" id="" placeholder="Imgrese Ubicacion">
+            <input class = "col-sm" type="file" name="fileImagenes" id="">
+
+            <input class = "accion" type="button" value="Subir" onclick="enviarnot()">
+            <input class = "accion" type="button" value="Borrar" onclick="borrar()">
+        </div>   
+    </form>
+
+    <script src="js/scripts.js"></script>
+
+
+
+    </section>
+
+</body>
+
+<footer>
+    <div class="footer">
+        <p>Todos los derechos reservados 2021 © Caos News</p>
+    </div>
+</footer>
+
+</html>
