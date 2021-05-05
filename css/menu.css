@@ -12,10 +12,12 @@
     background: rgba(14, 13, 13, 0.9);
     transition: all 1.5s;
     transform: translateX(-100%);
+    text-decoration: none;
+    list-style: none;
 
 }
 
-.menu a{
+.menu  li a{
     display: block;
     color: white;
     height: 50px;
@@ -23,7 +25,20 @@
     padding: 15px;
     border-bottom: solid 1px rgb(255, 255, 255, 0.3);
 }
-.menu a:hover{
+
+.menu li ul{
+    display: none;
+    position: absolute;
+    text-decoration: none;
+    list-style: none;
+    background: rgba(14, 13, 13, 0.9);
+}
+
+.menu li:hover > ul{
+    display: block;
+}
+
+.menu li a:hover{
     background: rgb(255, 255, 255, 0.3);
     transition: 0.5s;
 }
