@@ -1,0 +1,14 @@
+
+#informacion{
+    font-family: cursive;
+    float: left;
+    width: 20%;
+    margin-left: 150px;
+    margin-top: 80px;
+}
+
+#formulario{
+    width: 60%;
+    float: left;
+    margin-left: 120px;
+}

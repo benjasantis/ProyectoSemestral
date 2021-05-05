@@ -27,7 +27,7 @@ function registro(){
     window.close();
 }
 
-function ingrColaborador(){
+function ingrcolaborador(){
     alert('Ingreso Correcto')
     window.open('registro_noticia.html')
     window.close();

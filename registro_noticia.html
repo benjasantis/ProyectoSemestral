@@ -10,17 +10,18 @@
     <link rel="stylesheet" href="css/fontello.css">
     <script src="https://kit.fontawesome.com/3de857c674.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/usuario.css">
+    <link rel="stylesheet" href="css/form_noticia.css">
 </head>
 
 <body>
     <header>
-        <div class ="contenedor">
-            <h1 class ="icon-globe">Caos News</h1>
+        <div class="contenedor">
+            <h1 class="icon-globe">Caos News</h1>
             <input type="checkbox" name="" id="menu-bar">
             <label class="fas fa-bars" for="menu-bar"></label>
 
-            <nav class = "menu">
-                
+            <nav class="menu">
+
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="ubicacion.html">Ubicación</a></li>
                 <li><a href="contactanos.html">Contacto</a></li>
@@ -32,34 +33,43 @@
                     </ul>
                 </li>
                 <li><input class="search" type="text" name="buscar" id="" placeholder="Buscar"></li>
-            
-        </nav>
+
+            </nav>
         </div>
     </header>
-    <section id = "cabecera">
+    <section id="cabecera">
         <h2>Lo mas Actual</h2>
         <h3>Informate junto a nosotros</h3>
     </section>
 
-    <section id = "formulario">
+    <section id="informacion">
 
-        <form class = "contacto" action="" method="post">
-        <h2>Registro Usuario</h2>
-         <div class = "contenedor-input">
-            
-            <input class = "col-sm" type="email" name="txtAutor" id="" placeholder="Ingrese El txtAutor">
-            <input class = "col-sm" type="date" name="dateFecha" id="">
-            <input class = "col-sm" type="text" name="txtTitulo" id="" placeholder="Ingrese Titulo">
-            <input class = "col-sm" type="text" name="txtCategoria" id="" placeholder="Ingrese Categoria">
-            <input class = "col-sm" type="text" name="txtUbicacion" id="" placeholder="Imgrese Ubicacion">
-            <input class = "col-sm" type="file" name="fileImagenes" id="">
+        <h2>Usted se ha identificado como:</h2>
+        <br>
+        <p>Recuerde llenar todos los campos solicitados. Una vez revisador y validados por el Administrador se procedera
+            a la carga de la noticia</p>
 
-            <input class = "accion" type="button" value="Subir" onclick="enviarnot()">
-            <input class = "accion" type="button" value="Borrar" onclick="borrar()">
-        </div>   
-    </form>
+    </section>
 
-    <script src="js/scripts.js"></script>
+    <section id="formulario">
+
+        <form class="contacto" action="" method="post">
+            <h2>Noticia</h2>
+            <div class="contenedor-input">
+
+                <input class="col-sm" type="email" name="txtAutor" id="" placeholder="Ingrese El Autor">
+                <input class="col-sm" type="date" name="dateFecha" id="">
+                <input class="col-sm" type="text" name="txtTitulo" id="" placeholder="Ingrese Titulo">
+                <input class="col-sm" type="text" name="txtCategoria" id="" placeholder="Ingrese Categoria">
+                <input class="col-sm" type="text" name="txtUbicacion" id="" placeholder="Imgrese Ubicacion">
+                <input class="col-sm" type="file" name="fileImagenes" id="">
+
+                <input class="accion" type="button" value="Subir" onclick="enviarnot()">
+                <input class="accion" type="button" value="Borrar" onclick="borrar()">
+            </div>
+        </form>
+
+        <script src="js/scripts.js"></script>
 
 
 
