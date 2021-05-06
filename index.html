@@ -13,107 +13,132 @@
 
 <body>
     <header>
-        <div class ="contenedor">
-            <h1 class ="icon-globe">Caos News</h1>
+        <div class="contenedor">
+            <h1 class="icon-globe">Caos News</h1>
             <input type="checkbox" name="" id="menu-bar">
             <label class="fas fa-bars" for="menu-bar"></label>
 
-            <nav class = "menu">
-                
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="ubicacion.html">Ubicación</a></li>
-                    <li><a href="contactanos.html">Contacto</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="">Ingresar</a>
-                        <ul>
-                            <li><a href="usuario.html">Usuario</a></li>
-                            <li><a href="colaborador.html">Colaborador</a></li>
-                        </ul>
-                    </li>
-                    <li><input class="search" type="text" name="buscar" id="" placeholder="Buscar"></li>
-                
+            <nav class="menu">
+
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+                <li><a href="contactanos.html">Contacto</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="">Ingresar</a>
+                    <ul>
+                        <li><a href="usuario.html">Usuario</a></li>
+                        <li><a href="colaborador.html">Colaborador</a></li>
+                    </ul>
+                </li>
+                <li><input class="search" type="text" name="buscar" id="" placeholder="Buscar"></li>
+
             </nav>
         </div>
     </header>
-    <section id = "cabecera">
+    <section id="cabecera">
         <h2>Lo mas Actual</h2>
         <h3>Informate junto a nosotros</h3>
     </section>
-
-    <main>
-        <section id = "noticias">
+    <section class="valores">
+        <input type="button" value="Valor Dolar Hoy" onclick="recuperarDolar()">
+       
+        <div id="valor_dolar">
+            <script>
+                function recuperarDolar() {
+                    fetch("https://mindicador.cl/api/dolar")
+                        .then(function (response) {
+    
+                            response.json().then(function (data) {
+                                console.log(data);
+                                var dolar = data.serie[0].valor;
+                                document.getElementById("valor_dolar").innerHTML = dolar;
+    
+                            });
+    
+                        });
+    
+                }
             
+            </script>
+        </div>
+        
+        
+
+    </section>
+    <main>
+        <section id="noticias">
+
             <div class="contenido">
-                
+
                 <h3>Nacional</h3>
                 <div class="nacional">
-                <article>
-                    <a href="noticia.html"><img src="img/nacional_pan.jpg" alt=""></a>
-                    <h4>Sube el precio del pan</h4>
-                </article>
-                <article>
-                    <a href="noticia.html"><img src="img/nacional_carretera.jfif" alt=""></a>
-                    <h4>Nueva inversion para mejoramientos</h4>
-                </article>
-                <article>
-                    <a href="noticia.html"><img src="img/nacional_clima.jfif" alt=""></a>
-                    <h4>Se esperan temperaturas minimas</h4>
-                </article>
-                <article>
-                    <a href="noticia.html"><img src="img/nacional_robos.jpg" alt=""></a>
-                    <h4>Ola de robos </h4>
-                </article>
+                    <article>
+                        <a href="noticia.html"><img src="img/nacional_pan.jpg" alt=""></a>
+                        <h4>Sube el precio del pan</h4>
+                    </article>
+                    <article>
+                        <a href="noticia.html"><img src="img/nacional_carretera.jfif" alt=""></a>
+                        <h4>Nueva inversion para mejoramientos</h4>
+                    </article>
+                    <article>
+                        <a href="noticia.html"><img src="img/nacional_clima.jfif" alt=""></a>
+                        <h4>Se esperan temperaturas minimas</h4>
+                    </article>
+                    <article>
+                        <a href="noticia.html"><img src="img/nacional_robos.jpg" alt=""></a>
+                        <h4>Ola de robos </h4>
+                    </article>
                 </div>
 
                 <h3>Salud</h3>
                 <div class="salud">
-                
-                <article>
-                    <a href="noticia.html"><img src="img/salud_coronavirus.jpg" alt=""></a>
-                    <h4>Se mantiene el promedio de casos nuevos en el país</h4>
-                </article>
-                <article>
-                    <a href="noticia.html"><img src="img/salud_vacuna.jpg" alt=""></a>
-                    <h4>Nuevo cargamento de Sinovac</h4>
-                </article>
-                <article>
-                    <a href="noticia.html"><img src="img/salud_lentes.jpg" alt=""></a>
-                    <h4>Lentes con filtro para pantallas</h4>
-                </article>
-                <article>
-                    <a href="noticia.html"><img src="img/salud_obesidad.jpg" alt=""></a>
-                    <h4>Falta de actividad en cuarentena</h4>
-                </article>
+
+                    <article>
+                        <a href="noticia.html"><img src="img/salud_coronavirus.jpg" alt=""></a>
+                        <h4>Se mantiene el promedio de casos nuevos en el país</h4>
+                    </article>
+                    <article>
+                        <a href="noticia.html"><img src="img/salud_vacuna.jpg" alt=""></a>
+                        <h4>Nuevo cargamento de Sinovac</h4>
+                    </article>
+                    <article>
+                        <a href="noticia.html"><img src="img/salud_lentes.jpg" alt=""></a>
+                        <h4>Lentes con filtro para pantallas</h4>
+                    </article>
+                    <article>
+                        <a href="noticia.html"><img src="img/salud_obesidad.jpg" alt=""></a>
+                        <h4>Falta de actividad en cuarentena</h4>
+                    </article>
                 </div>
 
                 <h3>Espectaculo</h3>
                 <div class="espectaculo">
-                
-                <article>
-                    <a href="noticia.html"><img src="img/espectaculo_viña.jfif" alt=""></a>
-                    <h4>Incertidumbre por la realizacion del festival de viña del mar</h4>
-                </article>
-                <article>
-                    <a href="noticia.html"><img src="img/espectaculo_paloma.jpg" alt=""></a>
-                    <h4>Nuevo album de la cantante genera controversia</h4>
-                </article>
-                <article>
-                    <a href="noticia.html"><img src="img/espectaculo_marcelo.jpg" alt=""></a>
-                    <h4>Nuevo escandalo del ex tenista</h4>
-                </article>
-                <article>
-                    <a href="noticia.html"><img src="img/espectaculo_luli.jfif" alt=""></a>
-                    <h4>Sepa como se preparo la chica fitness para el concurso de fisico-cultutrismo</h4>
-                </article>
-                <article>
-                    <a href="categorias.html">Ver mas</a>
-                </article>
+
+                    <article>
+                        <a href="noticia.html"><img src="img/espectaculo_viña.jfif" alt=""></a>
+                        <h4>Incertidumbre por la realizacion del festival de viña del mar</h4>
+                    </article>
+                    <article>
+                        <a href="noticia.html"><img src="img/espectaculo_paloma.jpg" alt=""></a>
+                        <h4>Nuevo album de la cantante genera controversia</h4>
+                    </article>
+                    <article>
+                        <a href="noticia.html"><img src="img/espectaculo_marcelo.jpg" alt=""></a>
+                        <h4>Nuevo escandalo del ex tenista</h4>
+                    </article>
+                    <article>
+                        <a href="noticia.html"><img src="img/espectaculo_luli.jfif" alt=""></a>
+                        <h4>Sepa como se preparo la chica fitness para el concurso de fisico-cultutrismo</h4>
+                    </article>
+                    <article>
+                        <a href="categorias.html">Ver mas</a>
+                    </article>
                 </div>
 
             </div>
         </section>
-        <section id = "lateral"> 
-            <h2>Periodistas Destacados</h2> 
+        <section id="lateral">
+            <h2>Periodistas Destacados</h2>
             <ul>
                 <section>
                     <a href="periodista.html"><img src="img/Periodistas/periodista_1.jfif" alt=""></a>

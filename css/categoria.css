@@ -32,6 +32,10 @@
 
 }
 
+#general a{
+    text-decoration: none;
+}
+
 #general div h3{
     color: white;
     margin-top: 50px;

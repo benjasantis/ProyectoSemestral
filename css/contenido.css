@@ -66,3 +66,16 @@
     width: 85%;
     float: left;
 }
+
+.valores{
+    text-align: center;
+    height: 80px;
+    background-image: radial-gradient(rgb(88, 87, 87), black);
+    color: white;
+    font-family: cursive;
+}
+
+
+#valor_dolar{
+    align-items: center;
+}

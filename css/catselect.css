@@ -32,9 +32,12 @@
 
 }
 
-#general div h3{
+#general div  h3{
     color: black;
     margin-top: 60px;
+}
+#general div a{
+    text-decoration: none;
 }
 
 #destacadas{

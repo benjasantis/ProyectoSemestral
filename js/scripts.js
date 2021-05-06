@@ -1,15 +1,15 @@
 function mensaje() {
-    alert('Su mensaje ha sido enviado, nos contactaremos a la brevedad')
+    swal('Su mensaje ha sido enviado, nos contactaremos a la brevedad','','success')
     window.open('index.html')
     window.close();
 }
 
 function borrar(){
-    alert('Elementos eliminados');
+    swal('Elementos eliminados','','success');
 }
 
 function ingresar(){
-    alert('Ingreso Correcto')
+    swal('Ingreso Correcto','','success')
     window.open('index.html')
     window.close();
 
@@ -22,13 +22,13 @@ function registrar(){
 }
 
 function registro(){
-    alert('Registro exitoso')
+    swal('Registro exitoso','','success')
     window.open('index.html')
     window.close();
 }
 
 function ingrcolaborador(){
-    alert('Ingreso Correcto')
+    swal('Ingreso Correcto','','success')
     window.open('registro_noticia.html')
     window.close();
 
@@ -41,7 +41,7 @@ function ayuda(){
 }
 
 function enviarnot() {
-    alert('Su noticia a sido enviada, el adm. revisara y publicara')
+    swal('Su noticia a sido enviada, el administrador revisara y publicara','','success')
     window.open('index.html')
     window.close();
 }
