@@ -1,0 +1,38 @@
+
+#general{
+    height: 100vh;
+    width: 80%;
+    text-align: center;
+}
+
+#titulo h2{
+
+    font-family: cursive;
+    margin: 30px;
+    text-align: center;
+}
+
+
+#general div:hover{
+    transition: all 300ms ease;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+
+#general div{
+
+    float: right;
+    background-image: radial-gradient(rgb(88, 87, 87), rgb(3, 11, 87));
+    width: 250px;
+    height: 120px;
+    margin: 20px;
+    border-radius: 15px;
+    margin-top: 50px;
+
+}
+
+#general div h3{
+    color: white;
+    margin-top: 50px;
+}

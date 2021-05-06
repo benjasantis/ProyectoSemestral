@@ -1,0 +1,46 @@
+
+#general{
+    height: 100vh;
+    width: 80%;
+    text-align: center;
+}
+
+#periodista h2{
+
+    font-family: cursive;
+    margin: 30px;
+    text-align: center;
+}
+  
+#periodista img{
+    height: 150px;
+    width: 150px;
+    margin-left: 630px;
+    border-radius: 50%;
+   
+
+}
+
+#periodista img:hover{
+    transition: all 300ms ease;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+
+#general div a img:hover{
+    transition: all 300ms ease;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+}
+
+#general div a img{
+
+    float: right;
+    width: 250px;
+    height: 120px;
+    margin: 20px;
+    border-radius: 15px;
+    margin-top: 50px;
+
+}
