@@ -11,11 +11,15 @@
     margin: 30px;
     text-align: center;
 }
-  
+
+#periodista{
+    width: 100%;
+    text-align: center;
+}
+   
 #periodista img{
     height: 150px;
     width: 150px;
-    margin-left: 630px;
     border-radius: 50%;
    
 

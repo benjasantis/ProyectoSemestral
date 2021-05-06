@@ -1,18 +1,19 @@
 
 
-#contenido{
-    width: 95%;
+main{
+    width: 100%;
     height: 100vh;
-    display: flex;
+    align-items: center;
     
 
 }
 
 .historia{
-    width: 40%;
+    width: 100%;
     float: left;
-    padding: 50px;
-
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .historia h2{
     font-family: cursive;
@@ -20,8 +21,11 @@
 }
 
 .mision{
-    width: 95%;
-    padding: 50px;
+    width: 100%;
+    float: left;
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;
     
 }
 
