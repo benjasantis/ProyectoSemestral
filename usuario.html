@@ -43,15 +43,15 @@
 
     <section id = "formulario">
 
-        <form class = "contacto" action="" method="post">
+        <form class = "contacto" action="" method="post" onsubmit="ingresar()">
         <h2>Ingreso Usuario</h2>
          <div class = "contenedor-input">
             
-            <input class = "col-xl" type="email" name="txtEmail" id="" placeholder="Ingrese Email">
-            <input class = "col-xl" type="text" name="txtPassword" id="" placeholder="Ingrese su Telefono">
+            <input class = "col-xl" type="email" name="txtEmail" id="" placeholder="Ingrese Email"required>
+            <input class = "col-xl" type="text" name="txtPassword" id="" placeholder="Ingrese su Contraseña"required>
             
-            <input class = "accion" type="submit" value="Ingresar" onclick="ingresar()">
-            <input class = "accion" type="button" value="Registrar" onclick="registrar()">
+            <input class = "accion" type="submit" value="Ingresar">
+            <input class = "accion" type="button" value="Registrar" onclick="irregistrar()">
         </div>   
     </form>
 

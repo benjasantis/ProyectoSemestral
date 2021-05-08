@@ -39,18 +39,18 @@
         <h2>Lo mas Actual</h2>
         <h3>Informate junto a nosotros</h3>
     </section>
-
+ 
     <section id = "formulario">
 
-        <form class = "contacto" action="" method="post">
+        <form class = "contacto" action="" method="post" onsubmit="return mensaje()">
         <h2>Formulario de contacto</h2>
          <div class = "contenedor-input">
-            <input class = "col-xl" type="text" name="txtNombre" id="" placeholder="Ingrese Nombre Completo">
-            <input class = "col-sm" type="email" name="txtEmail" id="" placeholder="Ingrese Email">
-            <input class = "col-sm" type="text" name="txtFono" id="" placeholder="Ingrese su Telefono">
-            <input class = "col-xxl" type="text" name="txtMensaje" id="" placeholder="Ingrese su mensaje">
+            <input class = "col-xl" type="text" name="txtNombre" id="" placeholder="Ingrese Nombre Completo" required>
+            <input class = "col-sm" type="email" name="txtEmail" id="" placeholder="Ingrese Email"required>
+            <input class = "col-sm" type="text" name="txtFono" id="" placeholder="Ingrese su Telefono" requirede>
+            <input class = "col-xxl" type="text" name="txtMensaje" id="" placeholder="Ingrese su mensaje"required>
 
-            <input class = "accion" type="submit" value="Enviar" onclick="mensaje()">
+            <input class = "accion" type="submit" value="Enviar">
             <input class = "accion" type="button" value="borrar" onclick="borrar()">
         </div>   
     </form>

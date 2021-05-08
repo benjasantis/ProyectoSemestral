@@ -1,11 +1,31 @@
+
+function registrar(){
+
+    var contraseña1 = document.getElementById("txtPassword").Value;
+    var contraseña2 = document.getElementById("txtContraseña").value;
+
+    if(contraseña1 != contraseña2){
+        swal('contraseñas deben ser iguales','','error')
+        return false;
+    }
+   
+    
+    
+}
+
 function mensaje() {
     swal('Su mensaje ha sido enviado, nos contactaremos a la brevedad','','success')
-    window.open('index.html')
-    window.close();
+    return false;
+    
 }
 
 function borrar(){
     swal('Elementos eliminados','','success');
+}
+
+function irregistrar(){
+    window.open('registro.html')
+    window.close();
 }
 
 function ingresar(){
@@ -16,14 +36,8 @@ function ingresar(){
 
 }
 
-function registrar(){
-    window.open('registro.html')
-    window.close();
-}
-
-function registro(){
-    swal('Registro exitoso','','success')
-    window.open('index.html')
+function ayuda(){
+    window.open('ayuda.html')
     window.close();
 }
 
@@ -34,14 +48,7 @@ function ingrcolaborador(){
 
 }
 
-function ayuda(){
-    window.open('ayuda.html')
-    window.close();
-
-}
-
 function enviarnot() {
     swal('Su noticia a sido enviada, el administrador revisara y publicara','','success')
-    window.open('index.html')
-    window.close();
+    return false;
 }

@@ -43,16 +43,17 @@
 
     <section id = "formulario">
 
-        <form class = "contacto" action="" method="post">
+        <form class = "contacto" action="" method="post" onsubmit="return registrar()">
         <h2>Registro Usuario</h2>
          <div class = "contenedor-input">
             
-            <input class = "col-xl" type="email" name="txtEmail" id="" placeholder="Ingrese Email">
-            <input class = "col-xl" type="text" name="txtPassword" id="" placeholder="Ingrese su Telefono">
-            <input class = "col-xl" type="text" name="txtContraseña" id="" placeholder="Repita su Contraseña">
-            <input class = "col-xl" type="text" name="txtNombre" id="" placeholder="Ingrese su nombre de usuario">
+            <input class = "col-xl" type="email" name="txtEmail" id="txtEmail" placeholder="Ingrese Email" required>
+            <input class = "col-xl" type="password" name="txtPassword" id="txtPassword" placeholder="Ingrese una Contraseña" required minlength="10" maxlength="12">
+            <input class = "col-xl" type="password" name="txtContraseña" id="txtContraseña" placeholder="Repita su Contraseña" required minlength="10" maxlength="12">
+            <input class = "col-xl" type="text" name="txtNombre" id="txtNombre" placeholder="Ingrese su nombre de usuario" required pattern="[A-Za-z ]{15,30} " title="Escribe un nombre y apellido entre 15 y 30 caracteres">
 
-            <input class = "accion" type="button" value="Registrar" onclick="registro()">
+            <input class = "accion" type="submit" value="Enviar">
+
         </div>   
     </form>
 

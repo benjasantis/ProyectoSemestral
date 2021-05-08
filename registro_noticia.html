@@ -53,18 +53,18 @@
 
     <section id="formulario">
 
-        <form class="contacto" action="" method="post">
+        <form class="contacto" action="" method="post" onsubmit="enviarnot()">
             <h2>Noticia</h2>
             <div class="contenedor-input">
 
-                <input class="col-sm" type="email" name="txtAutor" id="" placeholder="Ingrese El Autor">
-                <input class="col-sm" type="date" name="dateFecha" id="">
-                <input class="col-sm" type="text" name="txtTitulo" id="" placeholder="Ingrese Titulo">
-                <input class="col-sm" type="text" name="txtCategoria" id="" placeholder="Ingrese Categoria">
-                <input class="col-sm" type="text" name="txtUbicacion" id="" placeholder="Imgrese Ubicacion">
-                <input class="col-sm" type="file" name="fileImagenes" id="">
+                <input class="col-sm" type="email" name="txtAutor" id="" placeholder="Ingrese El Autor" required>
+                <input class="col-sm" type="date" name="dateFecha" id=""required>
+                <input class="col-sm" type="text" name="txtTitulo" id="" placeholder="Ingrese Titulo"required>
+                <input class="col-sm" type="text" name="txtCategoria" id="" placeholder="Ingrese Categoria"required>
+                <input class="col-sm" type="text" name="txtUbicacion" id="" placeholder="Imgrese Ubicacion"required>
+                <input class="col-sm" type="file" name="fileImagenes" id=""required>
 
-                <input class="accion" type="button" value="Subir" onclick="enviarnot()">
+                <input class="accion" type="submit" value="Subir">
                 <input class="accion" type="button" value="Borrar" onclick="borrar()">
             </div>
         </form>

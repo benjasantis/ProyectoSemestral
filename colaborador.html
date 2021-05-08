@@ -43,14 +43,14 @@
 
     <section id = "formulario">
 
-        <form class = "contacto" action="" method="post">
+        <form class = "contacto" action="" method="post" onsubmit="ingrcolaborador()">
         <h2>Ingreso Colaborador</h2>
          <div class = "contenedor-input">
             
-            <input class = "col-xl" type="email" name="txtEmail" id="" placeholder="Ingrese Email">
-            <input class = "col-xl" type="text" name="txtPassword" id="" placeholder="Ingrese su Telefono">
+            <input class = "col-xl" type="email" name="txtEmail" id="" placeholder="Ingrese Email" required>
+            <input class = "col-xl" type="text" name="txtPassword" id="" placeholder="Ingrese su Contraseña"required minlength="10">
             
-            <input class = "accion" type="submit" value="Ingresar" onclick="ingrcolaborador()">
+            <input class = "accion" type="submit" value="Ingresar">
             <input class = "accion" type="button" value="Borrar" onclick="borrar()">
             <input class = "accion" type="button" value="Ayuda" onclick="ayuda()">
         </div>   
